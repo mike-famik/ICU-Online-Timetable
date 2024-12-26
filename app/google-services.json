@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "938567883467",
+    "firebase_url": "https://online-school-timetable-app-default-rtdb.firebaseio.com",
+    "project_id": "online-school-timetable-app",
+    "storage_bucket": "online-school-timetable-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938567883467:android:715c355ec4a53e31f6594e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjabZqTStpp2edSf7bUu_JTJmSceK5W4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

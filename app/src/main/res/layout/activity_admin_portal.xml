@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvAdminTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Timetable"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Timetable -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:weightSum="1">
+
+            <!-- Table Header -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Courses"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lecturer"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center" />
+            </TableRow>
+
+            <!-- Monday Timetable Rows (Sample Entries) -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="10:00 - 12:00"
+                    android:padding="8dp"
+                    android:id="@+id/etMondayTime1" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Room 101"
+                    android:padding="8dp"
+                    android:id="@+id/etMondayRoom1" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Math"
+                    android:padding="8dp"
+                    android:id="@+id/etMondayCourse1" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Dr. Smith"
+                    android:padding="8dp"
+                    android:id="@+id/etMondayLecturer1" />
+            </TableRow>
+
+            <!-- Add more rows for other days and times, as needed -->
+
+            <!-- Tuesday -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="09:00 - 11:00"
+                    android:padding="8dp"
+                    android:id="@+id/etTuesdayTime1" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Room 102"
+                    android:padding="8dp"
+                    android:id="@+id/etTuesdayRoom1" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="English"
+                    android:padding="8dp"
+                    android:id="@+id/etTuesdayCourse1" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Dr. Jane"
+                    android:padding="8dp"
+                    android:id="@+id/etTuesdayLecturer1" />
+            </TableRow>
+
+            <!-- Add more days and times similarly... -->
+
+        </TableLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveTimetable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Timetable"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
